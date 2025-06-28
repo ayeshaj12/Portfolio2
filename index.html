@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayesha Jamal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+</head>
+<script>
+    const footer = document.getElementById('footer');
+  
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            footer.classList.add('visible');
+          }
+        });
+      },
+      {
+        threshold: 0.001
+      }
+    );
+  
+    observer.observe(footer);
+  </script>  
+<body>
+  <header id="name">
+    <h1>AYESHA JAMAL</h1>
+
+    
+<!-- Navbar -->
+<nav id="topNav">
+  <div class="nav-container">
+    <a href="#aboutme" onclick="scrollToSection('aboutme')">About Me</a>
+    <a href="#experience-cards" onclick="scrollToSection('experience-cards')">Experience</a>
+    <a href="#plan" onclick="scrollToSection('plan')">Resume</a>
+    <a href="myWorks.html">My Work</a>
+    <a href="mailto:jamalayesha000@gmail.com">Contact</a>
+  </div>
+</nav>
+
+
+  <div id="mainContent">
+    <div class="marquee-container">
+    <div class="marquee">
+        <div class="track">
+          <img id="logo1" src="assets/logo1.png" alt="Logo 1">
+          <img id="logo2" src="assets/logo2.png" alt="Logo 2">
+          <img id="logo3" src="assets/logo3.png" alt="Logo 3">
+          <img id="logo4" src="assets/logo4.png" alt="Logo 4">
+          <img id="logo5" src="assets/logo5.png" alt="Logo 5">
+          <img id="logo6" src="assets/logo6.png" alt="Logo 6">
+          <img id="logo1" src="assets/logo1.png" alt="Logo 1">
+          <img id="logo2" src="assets/logo2.png" alt="Logo 2">
+          <img id="logo3" src="assets/logo3.png" alt="Logo 3">
+          <img id="logo4" src="assets/logo4.png" alt="Logo 4">
+          <img id="logo5" src="assets/logo5.png" alt="Logo 5">
+          <img id="logo6" src="assets/logo6.png" alt="Logo 6">
+        </div>
+      </div>
+    </div>
+  </header>
+    <section class="forsamesize">
+    <section id="aboutme" >
+        <h2>Touch to reveal more about me!! 🤫 </h2>
+        <div class="cards-container">
+
+          <div class="card education" tabindex="0" data-title="Education" data-info="Junior at Queens College studying CS with graphic design.">
+            <h3>Education</h3>
+            <div class="education-bubbles bubbles">
+              <div class="bubble">🎓 Junior at Queens College</div>
+              <div class="bubble">💻 Major: Computer Science</div>
+              <div class="bubble">🎨 Minor: Graphic Design & Arabic</div>
+            </div>
+          </div>
+        
+          <div class="card skills" tabindex="0" data-title="Skills" data-info="Programming, Algorithms, Graphic Design, Adobe Illustrator, Web Dev">
+            <h3>Skills</h3>
+            <div class="bubbles bubbles-right">
+            <div class="skills-bubbles bubbles">
+              <div class="bubble">💻 Programming</div>
+              <div class="bubble">🎨 Graphic Design</div>
+              <div class="bubble">🌐 Web Development</div>
+            </div>
+          </div>
+          </div>
+        
+          <div class="card interests" tabindex="0" data-title="Interests" data-info="Building apps, design, AI, hiking, photography">
+            <h3>Interests</h3>
+            <div class="interest-bubbles bubbles">
+              <div class="bubble">📱 Web Apps</div>
+              <div class="bubble">🎨 Design</div>
+              <div class="bubble">🚴‍♀️ Biking</div>
+            </div>
+          </div>
+        
+        </div>
+        
+        </section>
+  <!-- Experience Section -->
+  <h2>My Experiences ✨</h2>
+  <div class="experience-cards" id="experience-cards">
+  
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3>💼 Permenance</h3>
+          <p>ML & Software Intern</p>
+        </div>
+        <div class="flip-card-back">
+          <p>🔍 Prompt engineering with OpenAI API</p>
+          <p>🧠 Researched hallucination mitigation</p>
+          <p>📊 Trained ML classifiers on code safety and presented our study</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3>🏦 Barclays</h3>
+          <p>Technology Intern</p>
+        </div>
+        <div class="flip-card-back">
+          <p>🧱 Built monitoring systems in C++</p>
+          <p>📈 Created daily reports</p>
+          <p>🗣️ Presented to department head</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="plan" class="resume">
+    <div class="link-row-container">
+    <div class="inner link-row">
+        <a id="Resume" href="assets/resume.pdf" target="_blank" class= "w3-bar-item w3-button"> 
+          <img src="assets/resumeicon.png" alt="Resume" style="height:36px; width:auto;" >
+          </a>
+        <a  id= "LinkedIN" href="https://www.linkedin.com/in/ayesha-j-28235a1b6/" target="_blank">
+          <img src="assets/linkedin.png" alt="LinkedIn" style="height:24px; width:auto;">
+        </a>
+    </div>
+</div>
+  </section>
+</section>
+  <script>
+    function w3_open() {
+  document.getElementById("sideBar").classList.add("open");
+  document.getElementById("mainContent").classList.add("shifted");
+
+  document.getElementById("buttonOpen").style.display = "none";  // hide open btn
+  document.getElementById("buttonClose").style.display = "block"; // show close btn
+}
+
+function w3_close() {
+  document.getElementById("sideBar").classList.remove("open");
+  document.getElementById("mainContent").classList.remove("shifted");
+
+  document.getElementById("buttonOpen").style.display = "block"; // show open btn
+  document.getElementById("buttonClose").style.display = "none"; // hide close btn
+}
+
+window.onload = () => {
+  document.getElementById("buttonClose").style.display = "none";
+};
+
+
+function scrollToSection(id) {
+  w3_close();
+  const section = document.getElementById(id);
+  section.scrollIntoView({ behavior: "smooth" });
+}
+
+  </script>
+
+<footer id="footer">
+  <h4>✨ &copy; 2025 — Designed & Built by AYESHA JAMAL ✨</h4>
+  <p style="margin-top: 0.5rem;">Made with ❤️, ☕, and way too many tabs open.</p>
+</footer>
+</div>
+<script>
+  const footerElem = document.getElementById('footer');
+
+  const checker = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        console.log("footer is visible ")
+        footerElem.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  checker.observe(footerElem);
+  
+</script>
+</body>
+</html>
