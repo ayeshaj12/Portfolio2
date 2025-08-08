@@ -83,12 +83,13 @@ body {
 }
 
 .card {
-  position: relative;
+  position: flex;
   background: #200303;
   color: #E5E0DA;
   border-radius: 80px;
   padding: 1.5rem;
   width: 80vw;
+  flex-direction: column;
   max-width: 300px;
   text-align: center;
   cursor: pointer;
